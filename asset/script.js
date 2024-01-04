@@ -41,7 +41,7 @@ function setMole (){
 }
 
 function selectHole (){
-    if (this === currentMoleHole){
+    if (this == currentMoleHole){
         score += 10;
         document.getElementById('score').innerText = score.toString();
     }
