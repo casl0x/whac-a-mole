@@ -25,7 +25,7 @@ body {
     height: 160px; 
     background: {
         image: url('../img/hole.png');
-        size: 170px;
+        size: 160px;
         repeat: no-repeat;
         position: center;
     }
@@ -35,4 +35,5 @@ body {
     width: 80px;
     position: absolute;
     right: 25%;
+    top: 5%;
 }
