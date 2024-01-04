@@ -60,7 +60,7 @@ body {
   justify-content: center;
 }
 
-.game {
+#game {
   background-color: rgb(1, 254, 64);
   display: grid;
   grid-template-columns: repeat(3, 160px);
@@ -71,13 +71,10 @@ body {
 }
 
 .hole {
+  width: 150px;
   height: 150px;
-  background: rgb(19, 55, 139);
-  border: 5px solid rgb(30, 30, 30);
-  cursor: pointer;
-  border-radius: 100px;
-}
-
-.mole {
-  background: white;
+  background-image: url("../img/hole.png");
+  background-size: 150px;
+  background-repeat: no-repeat;
+  background-position: center;
 }/*# sourceMappingURL=main.css.map */
