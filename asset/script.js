@@ -1,3 +1,4 @@
+let currentMoleHole;
 
 window.onload = () => {
     setGame();
@@ -12,15 +13,27 @@ function setGame (){
         hole.id = i.toString();
         document.getElementById('game').appendChild(hole);
     }
+
+    setInterval(setMole, 2000);
 }
 
 function getRandomHole (){
-    let num = Math.floor(Math.random() * 9)
+    // 
+    let num = Math.floor(Math.random() * 9);
+    return num.toString();
 }
 
 function setMole (){
+
+    if (currentMoleHole) {
+        currentMoleHole.innerHTML = ''
+    }
+
     let mole = document.createElement('img');
+    mole.classList.add('mole')
     mole.src = './asset/img/Triopikeur.png'
 
     let num = getRandomHole()
+    currentMoleHole = document.getElementById(num);
+    currentMoleHole.appendChild(mole);
 }

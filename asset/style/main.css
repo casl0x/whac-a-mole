@@ -61,7 +61,7 @@ body {
 }
 
 #game {
-  background-color: rgb(1, 254, 64);
+  background-color: gray;
   display: grid;
   grid-template-columns: repeat(3, 160px);
   gap: 10px;
@@ -71,10 +71,17 @@ body {
 }
 
 .hole {
-  width: 150px;
-  height: 150px;
+  position: relative;
+  width: 160px;
+  height: 160px;
   background-image: url("../img/hole.png");
-  background-size: 150px;
+  background-size: 170px;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.mole {
+  width: 80px;
+  position: absolute;
+  right: 25%;
 }/*# sourceMappingURL=main.css.map */
