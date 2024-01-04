@@ -1,0 +1,31 @@
+@import './utils/reset';
+
+body { 
+    background-color: rgb(255, 228, 196); 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+} 
+
+.game { 
+    background-color: rgb(1, 254, 64); 
+    display: grid; 
+    grid-template-columns: repeat(3, 160px); 
+    gap: 10px; 
+    border: 2px solid rgb(216, 216, 216); 
+    padding: 20px; 
+    border-radius: 10px;   
+}
+
+.hole { 
+    height: 150px; 
+    background: rgb(19, 55, 139); 
+    border: 5px solid rgb(30, 30, 30); 
+    cursor: pointer; 
+    border-radius: 100px; 
+} 
+
+.mole {
+    background: white;
+}
